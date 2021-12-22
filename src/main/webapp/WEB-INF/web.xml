@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<servlet>
+		<servlet-name>SignIn</servlet-name>
+		<servlet-class>com.signup.SignIn</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>SignIn</servlet-name>
+		<url-pattern>/SignIn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SignUp</servlet-name>
+		<servlet-class>com.signup.SignUp</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>SignUp</servlet-name>
+		<url-pattern>/SignUp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addStudentData</servlet-name>
+		<servlet-class>com.addStudentData.AddStudentData</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addStudentData</servlet-name>
+		<url-pattern>/addStudentData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>getStudentData</servlet-name>
+		<servlet-class>com.file.WordFile</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>getStudentData</servlet-name>
+		<url-pattern>/createPDF</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateStudent</servlet-name>
+		<servlet-class>com.addStudentData.UpdateData</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateStudent</servlet-name>
+		<url-pattern>/updateData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>getSearchData</servlet-name>
+		<servlet-class>com.Data.GetSearchData</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>getSearchData</servlet-name>
+		<url-pattern>/getSearchData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateProfile</servlet-name>
+		<servlet-class>com.profile.UpdateProfile</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateProfile</servlet-name>
+		<url-pattern>/updateProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>forgotPassword</servlet-name>
+		<servlet-class>com.signup.ForgotPassword</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>forgotPassword</servlet-name>
+		<url-pattern>/forgotPassword</url-pattern>
+	</servlet-mapping>
+</web-app>
